@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="344dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/bt_primeiro"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:width="40dp"
+            android:text="@string/btPrimeiro"
+            tools:layout_editor_absoluteX="2dp"
+            tools:layout_editor_absoluteY="2dp"
+            tools:text="@string/btPrimeiro">
+
+        </Button>
+
+        <Button
+            android:id="@+id/bt_avanca"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:width="40dp"
+            android:text="@string/btAvanca"
+            tools:layout_editor_absoluteX="272dp"
+            tools:layout_editor_absoluteY="2dp">
+
+        </Button>
+
+        <Button
+            android:id="@+id/bt_insere"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:width="40dp"
+            android:text="@string/btInsere"
+            tools:layout_editor_absoluteX="182dp"
+            tools:layout_editor_absoluteY="2dp">
+
+        </Button>
+
+        <Button
+            android:id="@+id/bt_altera"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:width="40dp"
+            android:text="@string/btAltera"
+            tools:layout_editor_absoluteX="90dp"
+            tools:layout_editor_absoluteY="0dp">
+
+        </Button>
+
+        <Button
+            android:id="@+id/bt_exclui"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:width="40dp"
+            android:text="@string/btExclui"
+            tools:layout_editor_absoluteX="225dp"
+            tools:layout_editor_absoluteY="0dp"
+            tools:text="@string/btExclui">
+
+        </Button>
+
+        <Button
+            android:id="@+id/bt_retrocede"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:width="40dp"
+            android:text="@string/btRetrocede"
+            tools:layout_editor_absoluteX="137dp"
+            tools:layout_editor_absoluteY="2dp">
+
+        </Button>
+
+        <Button
+            android:id="@+id/bt_ultimo"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:width="40dp"
+            android:text="@string/btUltimo"
+            tools:layout_editor_absoluteX="320dp"
+            tools:layout_editor_absoluteY="0dp"
+            tools:text="@string/btUltimo"></Button>
+
+        <Button
+            android:id="@+id/bt_atualiza"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:width="40dp"
+            android:text="@string/btAtualiza"
+            tools:layout_editor_absoluteX="47dp"
+            tools:layout_editor_absoluteY="2dp"
+            tools:text="@string/btAtualiza">
+
+        </Button>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="344dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="44dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <TextView
+            android:id="@+id/tvNome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/tvNome"
+            tools:text="@string/tvNome" />
+
+        <EditText
+            android:id="@+id/et_nome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="@string/htNome"
+            tools:text="@string/htNome" />
+
+        <TextView
+            android:id="@+id/tvFone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/tvFone"
+            tools:text="@string/tvFone" />
+
+        <EditText
+            android:id="@+id/et_fone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="@string/htFone"
+            tools:text="@string/htFone" />
+
+        <TextView
+            android:id="@+id/tvEndereco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="@string/tvEndereco"
+            android:text="Endereco"
+            tools:text="@string/tvEndereco" />
+
+        <EditText
+            android:id="@+id/et_endereco"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="@string/htEndereco"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="227dp"
+            tools:text="@string/htEndereco" />
+
+        <Button
+            android:id="@+id/bt_ok"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/btOk"
+            android:visibility="invisible"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="285dp"
+            tools:text="@string/btOk" />
+
+        <Button
+            android:id="@+id/bt_cancelar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/btCancelar"
+            android:visibility="invisible"
+            tools:layout_editor_absoluteX="112dp"
+            tools:layout_editor_absoluteY="285dp"
+            tools:text="@string/btCancelar" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

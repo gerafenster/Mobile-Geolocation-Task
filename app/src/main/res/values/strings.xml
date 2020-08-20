@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">My Application3</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="btPrimeiro">PR</string>
+    <string name="btRetrocede">RE</string>
+    <string name="btInsere">IN</string>
+    <string name="btAltera">AL</string>
+    <string name="btExclui">EX</string>
+    <string name="btAvanca">AV</string>
+    <string name="btUltimo">UL</string>
+    <string name="btAtualiza">AT</string>
+    <string name="tvNome">Nome:</string>
+    <string name="tvFone">Fone:</string>
+    <string name="tvEndereco">Endereço</string>
+    <string name="htNome">Entre o seu nome</string>
+    <string name="htFone">Seu telefone</string>
+    <string name="htEndereco">Entre o seu endereço</string>
+    <string name="btOk">Ok</string>
+    <string name="btCancelar">Cancelar</string>
+    <string name="sim">Sim</string>
+    <string name="nao">Não</string>
+</resources>
