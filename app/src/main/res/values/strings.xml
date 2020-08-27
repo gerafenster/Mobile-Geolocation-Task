@@ -20,4 +20,6 @@
     <string name="btCancelar">Cancelar</string>
     <string name="sim">Sim</string>
     <string name="nao">Não</string>
+    <string name="btGravarRota">Gravar rota</string>
+    <string name="title_activity_maps">Map</string>
 </resources>
