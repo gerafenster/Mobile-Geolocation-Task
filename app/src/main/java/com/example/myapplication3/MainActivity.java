@@ -1,6 +1,7 @@
 package com.example.myapplication3;
 
 import android.content.ContentValues;
+import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
@@ -24,6 +25,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private EditText etNome = null;
     private EditText etFone = null;
     private EditText etEndereco = null;
+    private Button btGravarRota = null;
 
     private Button btOk = null;
     private Button btCancelar = null;
@@ -88,6 +90,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         btCancelar = (Button) (findViewById(R.id.bt_cancelar));
         btCancelar.setOnClickListener(this);
+
+        btGravarRota = (Button) (findViewById(R.id.bt_gravar_rota));
+        btGravarRota.setOnClickListener(this);
     }
 
     public void onClick(View v) {
@@ -147,6 +152,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 mostraManutencao();
                 ocultaOkCancelar();
                 break;
+            case R.id.bt_gravar_rota:
+                //acessa o maps
+                botaoGravarRota();
+                ocultaOkCancelar();
 
             default:
                 break;
@@ -173,6 +182,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             }
         }
 
+    }
+
+    public void botaoGravarRota()
+    {
+        Intent intent = new Intent(this,MapsActivity.class);
+        this.startActivity(intent);
     }
 
     private void excluiDados() {
